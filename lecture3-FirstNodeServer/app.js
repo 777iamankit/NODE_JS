@@ -6,11 +6,12 @@
 
 // http.createServer(requestListener);
 const http=require('http');
-const app=http.createServer((req,res)=>{
+const server=http.createServer((req,res)=>{
   console.log(req);
+
   });
 
   const PORT=3000;
-  app.listen(PORT,()=>{
-    console.log(`server is running at https://locahost:${PORT}`);
+  server.listen(PORT,()=>{
+    console.log(`server running on address https://localhost:${PORT}`);
   });
